@@ -1,0 +1,16 @@
+class Solution {
+    public int subtractProductAndSum(int n) {int x=n,sum=0,p=1;
+        while(x>0)
+        {
+          int y=x%10;
+            System.out.println(x%10+"this is x %10");
+           sum=sum+y;
+           p=p*y;
+             System.out.println(x/10+"this is x/10");
+           x=x/10;
+        }     
+     return p-sum;
+    
+        
+    }
+}
