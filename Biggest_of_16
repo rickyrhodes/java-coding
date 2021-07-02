@@ -4,7 +4,6 @@ class Biggest_of_16{
         int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p;
         Scanner s=new Scanner(System.in);
         a=s.nextInt();
-        a=s.nextInt();
         b=s.nextInt();
         c=s.nextInt();
         d=s.nextInt();
