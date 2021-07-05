@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Duplicate{
+    public static void main(String args[]) {
+        int a,temp=0;
+        Scanner s=new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER OF ELEMENTS TO BE CHECKED");
+        a=s.nextInt();
+        int ar[];
+        ar=new int[a];
+        System.out.println("ENTER THE ELEMENTS:");
+        for(int i=0;i<a;i++){
+            ar[i]=s.nextInt();
+        }
+        for(int i=0;i<ar.length;i++){
+            for(int j=i+1;j<ar.length;j++){
+                if(ar[i]==ar[j]){
+                    System.out.print(+ar[j]);
+                }
+              }
+
+        } 
+    }
+
+}
