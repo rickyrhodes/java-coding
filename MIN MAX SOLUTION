@@ -1,0 +1,12 @@
+class Solution{
+    
+    // Function for finding maximum and value pair
+    public static long find_multiplication (int a[], int b[], int n, int m) {
+        Arrays.sort(a);
+        Arrays.sort(b);
+        int C=a[a.length-1]*b[0];
+        return C;
+        
+    }
+    
+    
