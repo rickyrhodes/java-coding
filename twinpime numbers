@@ -1,0 +1,58 @@
+import java.io.*;  
+import java.util.*;  
+  
+  
+class Twin_Prime_Numbers {  
+ 
+    static boolean twinPrimeNumber(int number)  
+    {  
+        int a;  
+        int b = 0;  
+        int flag = 0;        
+        b = number/2;        
+        if(number == 0 || number == 1)
+        {    
+            return false;        
+        }else
+        {    
+            for(a = 2; a <= b ;a++)
+            {        
+                if(number%a == 0)
+                {        
+                    flag=1;        
+                    return false;       
+                }        
+            }        
+            if(flag == 0)    
+            {   
+                return true;  
+            }    
+        }  
+        return false;  
+    }  
+   
+      
+    static boolean checking(int number1, int number2)  
+    {  
+        if(twinPrimeNumber(number1) && twinPrimeNumber(number2) && Math.abs(number1 - number2) == 2)  
+            return true;  
+        else  
+            return false;  
+    }  
+   
+
+    public static void main(String[] args)  
+    {  
+        int l,m;    
+        Scanner s=new Scanner(System.in);   
+        System.out.println("Enter start value=");    
+        l = s.nextInt();
+        System.out.println("Enter last value=");  
+        m = s.nextInt();      
+        for (int i = l; i < m; i++) {  
+            if (checking(i, (i + 2))){  
+                System.out.printf("(%d, %d)\n", i, i + 2);  
+            }  
+        }  
+    }  
+}  
