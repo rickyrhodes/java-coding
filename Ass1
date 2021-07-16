@@ -1,0 +1,20 @@
+import java.util.*;
+class ass1
+{
+ public static void main(String args[])
+ {
+   ArrayList<Integer>a=new ArrayList<Integer>();
+   ArrayList<Integer>b=new ArrayList<Integer>();
+   a.add(10);
+   a.add(20);
+   a.add(30);
+   a.add(40);
+   b.add(100);
+   b.add(200);
+   b.add(300);
+   b.add(400);
+   a.addAll(b);
+   System.out.print(a);
+   
+  }
+}
