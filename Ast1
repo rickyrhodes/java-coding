@@ -1,0 +1,27 @@
+import java.util.*;
+class ar
+{
+ public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n;
+    ArrayList<Integer>T=new ArrayList<Integer>();
+    System.out.print("Entersize");
+    n=sc.nextInt();
+     System.out.print("Enter Array elements:"); 
+    for(int i=0;i<n;i++)
+    T.add(sc.nextInt());
+     System.out.print("Enter key element:");
+    int key=sc.nextInt();
+    if(T.contains(key))
+{
+      System.out.print("Enter m:");
+    int m=sc.nextInt();
+    T.set(T.indexOf(key),m);
+      System.out.print(T);
+}
+else
+ System.out.print("false");
+  
+   }
+}
