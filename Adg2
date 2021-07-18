@@ -1,0 +1,33 @@
+import java.util.*;
+class vector
+{
+public static void main(String args[])
+{
+Vector T=new Vector();
+T.add(101);
+T.add("Rama");
+T.add(6.58);
+T.add(102);
+T.add("Gita");
+T.add(8.98);
+System.out.println(T+"");
+int index1=T.indexOf("Gita");
+T.remove(index1);
+for(Object ob:T)
+{
+System.out.print(ob+" ");
+}
+System.out.print("\n");
+int index2=T.indexOf(6.58);
+T.add(index2,9.17);
+for(Object ob:T)
+{
+System.out.print(ob+" ");
+}
+System.out.print("\n");
+if(T.contains("sita"))
+System.out.println("found");
+else
+System.out.println("false! Not found");
+}
+}
