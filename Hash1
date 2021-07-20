@@ -1,0 +1,23 @@
+import java.util.*;
+class Hasmap
+{
+ public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    HashMap<Integer,String>T=new HashMap<Integer,String>();
+    int n;
+    int k;
+    String value;
+    System.out.println("Enter n value:");
+    n=sc.nextInt();
+    for(int i=0;i<n;i++)
+    {
+     k=sc.nextInt();
+     value=sc.next();
+     T.put(k,value);
+    }
+    TreeMap<Integer,String>M=new TreeMap<Integer,String>(T);
+    for(Integer o:M.keySet())
+      System.out.println(o+" "+M.get(o)+"");  
+  }
+}
