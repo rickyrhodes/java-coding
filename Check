@@ -1,0 +1,24 @@
+import java.util.*;
+class check
+{
+    public static void main(String[] args) 
+  {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter n value"); 
+        int n=sc.nextInt();
+        ArrayList<Integer>a=new ArrayList<Integer>();
+        System.out.println("ENTER THE VALUES");
+        for(int i=0;i<n;i++)
+        a.add(sc.nextInt());
+        System.out.println("enter the value u want to check");
+        int k=sc.nextInt();
+        Iterator<Integer>it=a.iterator();
+        while(it.hasNext())
+        {
+            if(it.next()<=k)
+            it.remove();
+        }
+      for(Integer i:a)
+          System.out.print(i+" "); 
+    }
+}
